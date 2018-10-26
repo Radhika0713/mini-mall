@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<title>Payment</title>
+<style>
+body
+{
+	background-image:url("ghi.jpg");
+}
+input[type=button]
+{
+	padding:5px;
+	border-radius:5px;
+	background: #36a9ea;
+	color:white;
+}
+input[type=text]
+{
+	padding:5px;
+	border-radius:15px;
+}
+input[type=number]
+{
+	padding:5px;
+	border-radius:15px;
+}
+input[type=radio]
+{
+	width:20px;
+	height:20px;
+}
+table,th
+{
+	border:0px solid black;
+	border-collapse:collapse;
+	padding:10px;
+	text-align:left;
+}
+.a
+{
+	font-family:"Times new roman";
+	font-size:22px;
+	padding:15px;
+	background-color:black;
+	text-decoration:none;
+	font-weight:bold;
+	
+}
+.a a
+{
+	color: #f2f2f2;
+	padding:70px;
+	text-decoration:none;
+}
+.b
+{
+	font-family:"times new roman";
+	font-size:30px;
+	color:white;
+	text-align:center;
+	
+}
+.c
+{
+	font-family:"times new roman";
+	font-size:25px;
+	color:white;
+	text-align:center;
+}
+.d
+{
+	text-align:center;
+}
+.e
+{
+	font-family:"times new roman";
+	font-size:20px;
+	padding:10px;
+	color:black;
+	background-color:white;
+	text-align:center;
+	margin-top:20px;
+}
+
+.aa
+{
+	font-family:"Times new roman";
+	font-size:20px;
+	padding:10px;
+	color:white;
+	margin-left:50px;
+	margin-right:50px;
+	text-align:center;
+}
+h4
+{
+font-family:"Times new roman";
+	font-size:35px;
+	color:white;
+	text-align:center;
+}
+</style>
+<body>
+<div class="aa">
+<h1><marquee>MINI MALL - "Service At Its Best !"</marquee></h1>
+</div>
+<div class="a">
+<a href="gurjot.html"> HOME </a>
+<a href="Payment.html"> ORDER </a>
+<a href="Feedback1.html"> FEEDBACK </a>
+<a href="ContactUs.html"> CONTACT US </a>
+<a href="SignUpPage.html"> LOG OUT </a>
+</div>
+<div class="b">
+<h3>Enter The Following Details :</h3><br>
+<form>
+<table>
+<tr>
+<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </th>
+<th>Name:</th>
+<th><input type="text" id="ab" placeholder="Type Your Name Here..." 
+size="50" style="font-size:15pt;height:35px;width:400px;"></th>
+<th>Address:</th>
+<th><input type="text" id="cd" placeholder="Type Address Here..." 
+style="font-size:15pt;height:35px;width:400px;"></th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  </th>
+<th>Pin Code:</th>
+<th><input type="number" id="ef" placeholder="Type Pin Code Here..." 
+style="font-size:15pt;height:35px;width:400px;"></th>
+<th>Email:</th>
+<th><input type="text" id="gh" placeholder="Type Email ID Here..." 
+size="50" style="font-size:15pt;height:35px;width:400px;"></th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+<th>Phone Number:</th>
+<th><input type="number" id="ij" placeholder="Type Phone Number Here..." 
+style="font-size:15pt;height:35px;width:400px;"></th>
+<th>Quantity:</th>
+<th><input type="number" id="kl" placeholder="Type Quantity Here..." 
+size="50" style="font-size:15pt;height:35px;width:400px;"></th>
+</tr>
+</table>
+</div>
+<h4>Select The Mode Of Payment :</h4>
+<div class="c">
+<table>
+<tr>
+<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </th>
+<th><input type="radio" name="a" value="1"> Paytm</th>
+<th><input type="radio" name="a" value="2"> Net-Banking</th>
+<th><input type="radio" name="a" value="3"> Credit Card</th>
+<th><input type="radio" name="a" value="4"> Cash On Delivery</th>
+</tr>
+</table>
+</div>
+<div class="d">
+<input type="button" value="BUY NOW" onclick="check()" 
+style="font-size:15pt;height:35px;width:200px;">
+</div>
+</form>
+<div class="e">
+<b>All Rights Reserved. Copyright &copy radhika. <br>
+@www.minimall.com</b>
+</div>
+<script language="javascript">
+function check()
+{
+	var x=confirm("Are You Sure You Want To Buy?");
+	if(x)
+	{
+		prompt("Please Give Reviews :");
+		alert("Order Successfully Placed !");
+		window.open("SignUpPage.html","_self");
+	}
+	else
+	{
+		alert("You Have Cancelled The Order !");
+	}
+}
+</script>
+</body>
+</html>
