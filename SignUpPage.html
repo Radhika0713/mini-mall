@@ -1,132 +1,196 @@
 <!doctype html>
 <html>
 <head>
+<title>
+SignUp Form
+</title>
+
 <style>
+body
+{
+	background-image:url("loginBackgrnd.jpg");
+ background-position: right top;
+ background-attachment: fixed;
+	}
 .a
 {
 	font-family:"Times new roman";
 	font-size:20px;
 	padding:5px;
-	color:white;
+	color:black;
 	margin-left:60px;
 	margin-right:60px;
 	text-align:center;
 }
-.b
+form
 {
-	font-family:"Times new roman";
-	font-size:28px;
-	color:white;
-	text-align:center;
+display:block;
+margin-top:0px;
+margin-left:130px;
 }
-.c
+input[type=submit]
 {
-	text-align:center;
+color:grey;
+	padding:5px;
+	border-radius:8px;
+}
+input[type=text]
+{color:grey;
+	padding:5px;
+	border-radius:10px;
+}
+input[type=password]
+{color:grey;
+	padding:5px;
+	border-radius:10px;
+}
+input[type=number]
+{color:grey;
+	padding:5px;
+	border-radius:10px;
 }
 .d
 {
 	font-family:"Times new roman";
 	font-size:20px;
 	padding:5px;
-	color:white;
-	background-color:black;
+	color:black;
+	background-color:pink;
 	text-align:center;
-	margin-top:70px;
+	margin-top:10px;
 }
-	
-input[type=text]
+.b
+{ 
+	font-family:"Times new roman";
+	font-size:28px;
+	color:black;
+	text-align:center;
+}
+input[type=radio]
 {
+color:grey;
 	padding:5px;
-	border-radius:10px;
-}
-input[type=password]
-{
-	padding:5px;
-	border-radius:10px;
-}
-input[type=number]
-{
-	padding:5px;
-	border-radius:10px;
-}
-body
-{
-	background-image:url("abc.jpg");
-}
-input[type=button]
-{
-	padding:5px;
-	border-radius:5px;
-}
-a
-{
-text-decoration:none;
-padding-left:30px;
-color:silver;
-}
-table,th
-{
-	border:0px solid black;
-	border-collapse:collapse;
-	padding:5px;
-	text-align:left;
+	border-radius:8px;
 }
 </style>
-<title>Sign Up Page</title>
 </head>
 <body>
 <div class="a">
 <h1><marquee>MINI MALL - "Service At Its Best !"</marquee></h1>
-</div>
-<form>
+</div> 
 <div class="b">
-<h3>Enter The Following Details :</h3><br>
-<div>
-<table>
-<tr>
-<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-&nbsp&nbsp&nbsp </th>
-<th>Username:</th>
-<th><input type="text" name="ab" placeholder="Type Username Here..." size="40" style="font-size:10pt;height:30px;
-width:300px;"></th>
-<th>Password:</th>
-<th><input type="password" name="cd" placeholder="Type Password Here..." style="font-size:10pt;height:30px;
-width:300px;"></th>
-</tr>
-<tr>
-<th></th>
-<th></th>
-</tr>
-<tr>
-<th> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-<th>Email:</th>
-<th><input type="text" name="ef" placeholder="Type Email ID Here..." id="2" size="30" style="font-size:10pt;height:30px;width:300px;">
-</th>
-<th>Phone Number:</th>
-<th><input type="number" name="cd" placeholder="Type Phone Number Here..." id="3" 
-style="font-size:10pt;height:30px;width:300px;">
-</th>
-</tr>
-</table>
+<h3>Enter The Following Details :</h3>
 </div>
-<br></form>
-<form>
-<div class="c">
-<input type="button" value="Sign Up" onclick="check()" style="font-size:20pt;height:40px;width:200px;">
-</div>
-</form>
-<div class="d">
+<form action="gurjot.html" name="myForm" 
+onsubmit="return(validate())" method="post">
+<form id="2" ><b><font size="6">First-Name : </font></b>
+&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="FirstName" placeholder="First name" id="2"
+ style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+ border-collapse:collapse; " >  &nbsp&nbsp&nbsp&nbsp 
+ &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp  
+<form id="2" ><b><font size="6">Last-Name : </font></b>&nbsp&nbsp&nbsp
 
-<b><a href="ContactUs.html" style="font-size:17pt">Contact Us</a><br></b>
+<input type="text" name="LastName" placeholder="Lastname" id="2"
+ style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+ border-collapse:collapse; " >  <br> <br> 
+<form id="1" ><b><font size="6">Email:</font></b>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text"  placeholder="Enter Email" id="1" 
+required name="Email" 
+style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+border-collapse:collapse;"  >
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+<form id="3"> <b><font size="6">Contact : </font></b>&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" 
+placeholder="Phone number" id="3" required name="Phone number" 
+style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+border-collapse:collapse;"  ><br>
+<br>
+<form id="8" ><b><font size="6">Password:</font></b>&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp<input type="text"  placeholder="Password" id="1" 
+required name="Password" 
+style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+border-collapse:collapse;"  >
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp
+<form id="4" ><b><font size="6">Re-Password:</font></b>&nbsp
+<input type="text"  placeholder="Enter Re-Password" id="1" 
+required name="Re-Password" 
+style="font-size:12pt;height:35px;width:300px;border:0px solid black;
+border-collapse:collapse;"  ><br><br>
+
+<font size="6"><b>Gender:</font></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="Gender" value="1"><font size="6"><b>Male
+</font></b> 
+&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="Gender" value="2"><font size="6">
+<b>Female</font></b> <br> <br>
+<input type="submit" value="Submit" onclick="validate()"
+style="font-size:20pt;height:40px;width:200px;color:black; margin-left:500px;">
+</form>  
+<div class="d">
+<b><a href="ContactUs.html" style="font-size:17pt; color: black;
+text-align:left;">Contact  Us</a><br></b>
 All Rights Reserved. Copyright &copy radhika. <br>
 @www.minimall.com
-<script>
-function check()
+<script type="text/javascript">
+      function validate()
+      {
+      
+         if( document.getElementById("2").value=="" )
+         {
+            alert( "Please provide your name!" );
+            document.getElementById("2").focus() ;
+            return false;
+         }
+        x=document.getElementById("1").value
+           var atpos = x.indexOf("@");
+           var dotpos = x.indexOf(".");
+           var dotposLast = x.lastIndexOf(".");
+    if (x==""||atpos<1 || dotpos<=atpos+2 || dotposLast+2>=x.length) 
 {
-	alert("Account Successfully Created !");
-	window.open("gurjot.html","_self");
+            alert( "Please provide Correct Email ID!" );
+            document.getElementById("1").focus() ;
+            return false;
+         }
+         a=document.getElementById("3").value 
+         if(a == "" || a.length != 10 || isNaN(a)  )
+         {
+            alert( "Please provide valid phone number" );
+            document.getElementById("3").focus() ;
+            return false;
+         }
+         if(document.getElementById("4").value == "" || 
+         document.getElementById("4").value != document.getElementById("5").value)
+         {
+            alert( "Please enter same password" );
+            document.getElementById("5").focus() ;
+            return false;
+         }
+x=document.getElementById("6").value
+if(x=="" || isNaN(x) || x.length!=6)
+         {
+            alert( "Please enter valid zip code" );
+            document.getElementById("6").focus() ;
+            return false;
+         }
+         if(document.getElementById("7").value=="-1")
+         {
+            alert( "Please select your country" );
+            return false;
+         }
+		 if( document.getElementById("8").value=="" )
+         {
+            alert( "Please provide password" );
+            document.getElementById("8").focus() ;
+            return false;
+         }
+return(true); 
 }
 </script>
-
 </body>
 </html>
